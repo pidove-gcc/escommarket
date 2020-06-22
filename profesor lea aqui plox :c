@@ -1,4 +1,8 @@
 # escommarket
+INICIAR SESION
+USUARIO:pidove
+CONTRASENA:pokemon
+despues de ingresar cree su propio usuario y ahora lo puede utilizar
 
 Si se va a probar el programa en netbeans  primero se debe de crear la base de datos y posteriormente editar los archivos dao y hibernate.cfg
 en ellos se debe de agregar los datos de la base.
