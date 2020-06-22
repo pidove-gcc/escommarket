@@ -1,6 +1,6 @@
 Base de Datos Postgres
 
-CREATE DATABASE Tienda
+CREATE DATABASE Tienda;
 
 drop table if exists Usuario;
 create table Usuario(
