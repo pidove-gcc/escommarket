@@ -1,0 +1,8 @@
+# escommarket
+
+Si se va a probar el programa en netbeans  primero se debe de crear la base de datos y posteriormente editar los archivos dao y hibernate.cfg
+en ellos se debe de agregar los datos de la base.
+
+Si se prueba en heroku los reportes y la grafica no funcionan debido a sus conflictos con jstl pero en netbeans funcionan al 100
+
+Debido al cambio repentina de IP los correos no llegaran aveces por que se bloquearan, se debe de intentar varias veces para que lo pueda enviar
