@@ -1,0 +1,34 @@
+Base de Datos Postgres
+
+Crear Base de Datos Tienda
+
+drop table if exists Usuario;
+create table Usuario(
+idUsuario serial not null primary key,
+nombre varchar(30) not null,
+paterno varchar(30) not null,
+materno varchar(30) not null,
+email varchar(50) not null,
+nombreUsuario varchar(20) not null,
+claveUsuario varchar(20) not null) ;
+
+drop table if exists Articulo;
+create table Articulo (
+ claveArticulo serial not null primary key,
+ nombreArticulo varchar(50) not null,
+ imagen bytea not null,
+ descripcion varchar(50) not null,
+ existencia int not null,
+ precio money not null);
+
+
+drop table if exists Movimientos;
+create table Movimientos(
+ idMovimiento serial not null primary key,
+ fecha date not null,
+ tipoMov char(1) not null,
+ claveArticulo int not null,
+ cantidad int not null,
+ foreign key(claveArticulo) references Articulo(claveArticulo) on update cascade on delete cascade);
+
+insert into Usuario values(1,'clark','kent','el','superman@ldj.com','superman','superman');
